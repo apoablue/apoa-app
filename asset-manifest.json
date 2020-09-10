@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/apoa-app/static/css/main.5f361e03.chunk.css",
+    "main.js": "/apoa-app/static/js/main.9c25b195.chunk.js",
+    "main.js.map": "/apoa-app/static/js/main.9c25b195.chunk.js.map",
+    "runtime-main.js": "/apoa-app/static/js/runtime-main.4e567ba1.js",
+    "runtime-main.js.map": "/apoa-app/static/js/runtime-main.4e567ba1.js.map",
+    "static/js/2.06aeffdf.chunk.js": "/apoa-app/static/js/2.06aeffdf.chunk.js",
+    "static/js/2.06aeffdf.chunk.js.map": "/apoa-app/static/js/2.06aeffdf.chunk.js.map",
+    "index.html": "/apoa-app/index.html",
+    "precache-manifest.decb301dd2e6544b373ca9769f1afadf.js": "/apoa-app/precache-manifest.decb301dd2e6544b373ca9769f1afadf.js",
+    "service-worker.js": "/apoa-app/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/apoa-app/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.06aeffdf.chunk.js.LICENSE.txt": "/apoa-app/static/js/2.06aeffdf.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/apoa-app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e567ba1.js",
+    "static/js/2.06aeffdf.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.9c25b195.chunk.js"
+  ]
+}
