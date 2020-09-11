@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import { Image } from 'shared/components/image';
+
 const StyledGalleryItem = styled.div`
     position: relative;
     overflow: hidden;
     cursor: pointer;
-`;
-
-const Image = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 `;
 
 const GalleryItemOverlay = styled.div`
@@ -41,7 +37,7 @@ const GalleryItem = ({imageUrl, text}) => {
         <StyledGalleryItem 
             onMouseEnter={() => setShowOverlay(true)} 
             onMouseLeave={() => setShowOverlay(false)}>
-            <Image src={imageUrl} />
+            <Image url={imageUrl} />
             {showOverlay && (
                 <GalleryItemOverlay>
                     <GalleryItemOverlayText>

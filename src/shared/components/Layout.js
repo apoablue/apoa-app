@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { Navbar } from './navbar';
 
-const Wrapper = styled.div`
+const Body = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -11,23 +11,33 @@ const Wrapper = styled.div`
     overflow: hidden;
 `;
 
-const Content = styled.div`
+const Wrapper = styled.div`
     position: relative;
-    flex: 1;    
+    flex: 1;
+    width: 100%;
+    ${props => props.background && css`
+        background: ${props.theme.colours[props.background] || props.background};
+    `}
+`;
+
+const Content = styled.div`
+    height: 100%;
     max-width: 90vw;
     width: 100%;
     margin: auto;
-    padding: 0 20px;
+    padding: 20px 20px 0;
 `;
 
-const Layout = ({children, pageName}) => {
+const Layout = ({ background, children, pageName }) => {
     return (
-        <Wrapper>
+        <Body>
             <Navbar pageName={pageName}/>
-            <Content>
-                {children}
-            </Content>
-        </Wrapper>
+            <Wrapper background={background}>
+                <Content>
+                    {children}
+                </Content>
+            </Wrapper>
+        </Body>
     );
 }
 
