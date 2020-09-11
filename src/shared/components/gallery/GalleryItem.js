@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import propTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { Image } from 'shared/components/image';
@@ -48,5 +49,10 @@ const GalleryItem = ({imageUrl, text}) => {
         </StyledGalleryItem>
     );
 }
+
+GalleryItem.propTypes = {
+    imageUrl: propTypes.string.isRequired,
+    text: propTypes.string.isRequired,
+};
 
 export default GalleryItem;

@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -35,6 +36,14 @@ const NavItem = ({children, className, isSelected, setHover = () => {}, url}) =>
       </StyledLink>
     </StyledItem>
   );
+};
+
+NavItem.propTypes = {
+  children: propTypes.node.isRequired,
+  className: propTypes.string,
+  isSelected: propTypes.bool,
+  setHover: propTypes.func,
+  url: propTypes.string.isRequired,
 };
 
 export default NavItem;
