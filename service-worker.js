@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/apoa-app/precache-manifest.7bfd6a19bb7d8d0a44466780b712d3b5.js"
+  "/apoa-app/precache-manifest.fa93ad48a1a819ff5e080a9b928c3856.js"
 );
 
 self.addEventListener('message', (event) => {
