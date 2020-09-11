@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import propTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledGallery = styled.div`
@@ -50,5 +51,11 @@ const Gallery = ({ children, className, fillMaxHeight }) => {
         </>
     );
 }
+
+Gallery.propTypes = {
+    children: propTypes.node.isRequired,
+    className: propTypes.string,
+    fillMaxHeight: propTypes.bool,
+};
 
 export default Gallery;

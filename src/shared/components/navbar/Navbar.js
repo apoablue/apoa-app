@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import propTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { PAGE_NAME } from 'shared/constants/PageName';
@@ -64,5 +65,9 @@ const Navbar = ({ pageName }) => {
     </StyledNavbar>
   );
 }
+
+Navbar.propTypes = {
+  pageName: propTypes.number.isRequired,
+};
 
 export default Navbar;

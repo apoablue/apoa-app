@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import { Navbar } from './navbar';
@@ -40,5 +41,11 @@ const Layout = ({ background, children, pageName }) => {
         </Body>
     );
 }
+
+Layout.propTypes = {
+  background: propTypes.string,
+  children: propTypes.node.isRequired,
+  pageName: propTypes.number.isRequired,
+};
 
 export default Layout;
