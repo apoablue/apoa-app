@@ -9,23 +9,23 @@ import NavItem from './NavItem';
 const StyledNavbar = styled.ul`
   list-style-type: none;
   margin: 0;
-  padding: 9px;
+  padding: .75em;
   overflow: hidden;
   background-color: #FFF;
-  font-size: 12px;
+  font-size: .8rem;
 `;
 
 const StyledName = styled(NavItem)`
 	float: right;
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: bold;
   a {
-    padding: 11px 14px;
-    border: 2px solid transparent;
-    color: red;
+    padding: .6em .7em;
+    border: .15em solid transparent;
+    color: ${props => props.theme.colours.action500};
     text-decoration: none;
     &:hover {
-      border: 2px solid ${props => props.theme.colours.action600};
+      border-color: ${props => props.theme.colours.action600};
     }
   }
 `;
@@ -44,24 +44,18 @@ const Navbar = ({ pageName }) => {
   return (
     <StyledNavbar>
       <NavItem 
-        isSelected={selected === PAGE_NAME.HOME} 
-        setHover={(val) => onHover(val, PAGE_NAME.HOME)}
+        isSelected={selected === PAGE_NAME.WORK} 
+        setHover={(val) => onHover(val, PAGE_NAME.WORK)}
         url="/">
-        Home
+        Work
       </NavItem>
       <NavItem 
-        isSelected={selected === PAGE_NAME.PROJECTS} 
-        setHover={(val) => onHover(val, PAGE_NAME.PROJECTS)}
-        url="/projects">
-        Projects
+        isSelected={selected === PAGE_NAME.ABOUT} 
+        setHover={(val) => onHover(val, PAGE_NAME.ABOUT)}
+        url="/about">
+        About
       </NavItem>
-      <NavItem 
-        isSelected={selected === PAGE_NAME.NEW} 
-        setHover={(val) => onHover(val, PAGE_NAME.NEW)}
-        url="/new">
-        New
-      </NavItem>
-      <StyledName url="/about">Apoa Falby Clark</StyledName>
+      <StyledName url="/">Apoa Falby Clark</StyledName>
     </StyledNavbar>
   );
 }

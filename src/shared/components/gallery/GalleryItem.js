@@ -19,28 +19,33 @@ const GalleryItemOverlay = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 9px;
-    background: rgba(0, 0, 0, 0.6);
-    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    background: ${props => props.theme.colours[props.overlayColour] || props.theme.colours.action200};
+    opacity: .85;
 `;
 
 const GalleryItemOverlayText = styled.div`
-    font-size: 14px;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
     color: white;
 `;
 
-const GalleryItem = ({imageUrl, text}) => {
+const GalleryItem = ({imageUrl, overlayColour, updateOverlayColour, text}) => {
     const [showOverlay, setShowOverlay] = useState(false);
+
+    const onMouseLeave = () => {
+        setShowOverlay(false);
+        updateOverlayColour();
+    }
 
     return (
         <StyledGalleryItem 
             onMouseEnter={() => setShowOverlay(true)} 
-            onMouseLeave={() => setShowOverlay(false)}>
+            onMouseLeave={onMouseLeave}>
             <Image url={imageUrl} />
             {showOverlay && (
-                <GalleryItemOverlay>
+                <GalleryItemOverlay overlayColour={overlayColour}>
                     <GalleryItemOverlayText>
                         {text}
                     </GalleryItemOverlayText>
