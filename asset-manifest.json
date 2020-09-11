@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/apoa-app/static/js/main.1b971e83.chunk.js",
-    "main.js.map": "/apoa-app/static/js/main.1b971e83.chunk.js.map",
+    "main.js": "/apoa-app/static/js/main.0346b25f.chunk.js",
+    "main.js.map": "/apoa-app/static/js/main.0346b25f.chunk.js.map",
     "runtime-main.js": "/apoa-app/static/js/runtime-main.4e567ba1.js",
     "runtime-main.js.map": "/apoa-app/static/js/runtime-main.4e567ba1.js.map",
-    "static/js/2.d1c5b6e4.chunk.js": "/apoa-app/static/js/2.d1c5b6e4.chunk.js",
-    "static/js/2.d1c5b6e4.chunk.js.map": "/apoa-app/static/js/2.d1c5b6e4.chunk.js.map",
+    "static/js/2.5049d43e.chunk.js": "/apoa-app/static/js/2.5049d43e.chunk.js",
+    "static/js/2.5049d43e.chunk.js.map": "/apoa-app/static/js/2.5049d43e.chunk.js.map",
     "index.html": "/apoa-app/index.html",
-    "precache-manifest.fa93ad48a1a819ff5e080a9b928c3856.js": "/apoa-app/precache-manifest.fa93ad48a1a819ff5e080a9b928c3856.js",
+    "precache-manifest.eef4cd98bf89130ace122b081b3e0a9e.js": "/apoa-app/precache-manifest.eef4cd98bf89130ace122b081b3e0a9e.js",
     "service-worker.js": "/apoa-app/service-worker.js",
-    "static/js/2.d1c5b6e4.chunk.js.LICENSE.txt": "/apoa-app/static/js/2.d1c5b6e4.chunk.js.LICENSE.txt",
+    "static/js/2.5049d43e.chunk.js.LICENSE.txt": "/apoa-app/static/js/2.5049d43e.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/apoa-app/static/media/1.60ffa4eb.jpg",
     "static/media/2.jpg": "/apoa-app/static/media/2.49eb3d81.jpg",
     "static/media/3.jpg": "/apoa-app/static/media/3.bead5267.jpg",
@@ -22,7 +22,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4e567ba1.js",
-    "static/js/2.d1c5b6e4.chunk.js",
-    "static/js/main.1b971e83.chunk.js"
+    "static/js/2.5049d43e.chunk.js",
+    "static/js/main.0346b25f.chunk.js"
   ]
 }
