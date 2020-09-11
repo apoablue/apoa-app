@@ -8,10 +8,10 @@ import { MainTheme } from 'shared/themes';
 const App = () => {
     return (
         <ThemeProvider theme={MainTheme}>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/new" component={New} />
-            <Route exact path="/about" component={About} />
+            <Route exact path="/apoa-app" component={Home} />
+            <Route exact path="/apoa-app/projects" component={Projects} />
+            <Route exact path="/apoa-app/new" component={New} />
+            <Route exact path="/apoa-app/about" component={About} />
         </ThemeProvider>
     );
 }

@@ -45,22 +45,22 @@ const Navbar = ({ pageName }) => {
       <NavItem 
         isSelected={selected === PAGE_NAME.HOME} 
         setHover={(val) => onHover(val, PAGE_NAME.HOME)}
-        url="/">
+        url="/apoa-app">
         Home
       </NavItem>
       <NavItem 
         isSelected={selected === PAGE_NAME.PROJECTS} 
         setHover={(val) => onHover(val, PAGE_NAME.PROJECTS)}
-        url="/projects">
+        url="/apoa-app/projects">
         Projects
       </NavItem>
       <NavItem 
         isSelected={selected === PAGE_NAME.NEW} 
         setHover={(val) => onHover(val, PAGE_NAME.NEW)}
-        url="/new">
+        url="/apoa-app/new">
         New
       </NavItem>
-      <StyledName url="/about">Apoa Falby Clark</StyledName>
+      <StyledName url="/apoa-app/about">Apoa Falby Clark</StyledName>
     </StyledNavbar>
   );
 }
