@@ -26,7 +26,7 @@ const Content = styled.div`
     max-width: 90vw;
     width: 100%;
     margin: auto;
-    padding: 20px 20px 0;
+    padding: 1.5rem 1.5rem 0;
 `;
 
 const Layout = ({ background, children, pageName }) => {

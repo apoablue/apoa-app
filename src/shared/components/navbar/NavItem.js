@@ -7,10 +7,9 @@ const StyledItem = styled.li`
   float: left;
 `;
 
-//#ff4c00
 const StyledLink = styled(Link)`
   display: inline-block;
-  padding: 18px 15px;
+  padding: 1.4em 1.25em;
   color: black;
   text-align: center;
   text-decoration: none;

@@ -32,7 +32,7 @@ const StyledImageContainer = styled.div`
     height: 50vh;
     width: 50vh;
     margin: auto;
-    border: 10px solid ${props => props.theme.colours.info500};
+    border: .8em solid ${props => props.theme.colours.info500};
     border-radius: 50%;
     overflow: hidden;
     animation: ${props => animateBorderColour} 10s infinite;
@@ -43,7 +43,7 @@ const StyledImage = styled(Image)`
 `;
 
 const StyledBio = styled.div`
-    margin: 20px 10px 30px;
+    margin: 1.5em 1em 2em;
 `;
 
 const StyledLink = styled(Link)`
@@ -64,7 +64,7 @@ const About = () => {
                 </StyledImageContainer>
                 <StyledBio>
                     Software Engineer and Illustrator based in London. 
-                    See some of my work <StyledLink to="/projects">here</StyledLink>. 
+                    See some of my work <StyledLink to="/">here</StyledLink>. 
                 </StyledBio>
             </StyledContainer>
         </Layout>

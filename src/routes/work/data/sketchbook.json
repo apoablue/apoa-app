@@ -1,7 +1,7 @@
 {		
 	"sketchbook" : [
 		{
-			"src": "projects/sketchbook/1.jpg",
+			"src": "work/sketchbook/1.jpg",
 			"title": "Charlotte, Paris, December 2015",
 			"classes": [
 				"grid-col-4",
@@ -9,7 +9,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/3.jpg",
+			"src": "work/sketchbook/3.jpg",
 			"title": "Pierre, Paris, October 2015",
 			"classes": [
 				"grid-col-4",
@@ -17,7 +17,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/5.jpg",
+			"src": "work/sketchbook/5.jpg",
 			"title": "Charlotte, Paris, September 2015",
 			"classes": [
 				"grid-col-4",
@@ -25,7 +25,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/8.jpg",
+			"src": "work/sketchbook/8.jpg",
 			"title": "Les Tuileries at closing time, Paris, September 2015",
 			"classes": [
 				"grid-col-4",
@@ -33,7 +33,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/9.jpg",
+			"src": "work/sketchbook/9.jpg",
 			"title": "Notre Dame, Paris, October 2015",
 			"classes": [
 				"grid-col-4",
@@ -41,7 +41,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/21.jpg",
+			"src": "work/sketchbook/21.jpg",
 			"title": "Tablecloth, London, October 2016",
 			"classes": [
 				"grid-col-4",
@@ -49,7 +49,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/7.jpg",
+			"src": "work/sketchbook/7.jpg",
 			"title": "Goûter, Paris, October 2015",
 			"classes": [
 				"grid-col-4",
@@ -57,7 +57,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/6.jpg",
+			"src": "work/sketchbook/6.jpg",
 			"title": "Tennis Courts, Paris, November 2015",
 			"classes": [
 				"grid-col-4",
@@ -65,7 +65,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/23.jpg",
+			"src": "work/sketchbook/23.jpg",
 			"title": "Train ride to Aberdeen, Scotland, November 2016",
 			"classes": [
 				"grid-col-8",
@@ -74,7 +74,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/2.jpg",
+			"src": "work/sketchbook/2.jpg",
 			"title": "Christmas in Devon, December 2015",
 			"classes": [
 				"grid-col-5",
@@ -82,7 +82,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/22.jpg",
+			"src": "work/sketchbook/22.jpg",
 			"title": "London kitchen, October 2016",
 			"classes": [
 				"grid-col-3",
@@ -90,7 +90,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/10.jpg",
+			"src": "work/sketchbook/10.jpg",
 			"title": "Promenade Plantée, Paris, August 2014",
 			"classes": [
 				"grid-col-3",
@@ -98,7 +98,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/11.jpg",
+			"src": "work/sketchbook/11.jpg",
 			"title": "Chocolate log, Devon, December 2014",
 			"classes": [
 				"grid-col-5",
@@ -106,7 +106,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/14.jpg",
+			"src": "work/sketchbook/14.jpg",
 			"title": "Summer in London, August 2014",
 			"classes": [
 				"grid-col-3",
@@ -114,7 +114,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/13.jpg",
+			"src": "work/sketchbook/13.jpg",
 			"title": "Isabeau & Gabriel, Caudebec, October 2015",
 			"classes": [
 				"grid-col-4",
@@ -122,7 +122,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/19.jpg",
+			"src": "work/sketchbook/19.jpg",
 			"title": "Ohna, Melbourne, December 2016",
 			"classes": [
 				"grid-col-4",
@@ -130,7 +130,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/15.jpg",
+			"src": "work/sketchbook/15.jpg",
 			"title": "Mountain studies for ceramics, Paris, November 2015",
 			"classes": [
 				"grid-col-4",
@@ -138,7 +138,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/20.jpg",
+			"src": "work/sketchbook/20.jpg",
 			"title": "Mountain study for ceramics, Paris, November 2015",
 			"classes": [
 				"grid-col-4",
@@ -146,7 +146,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/16.jpg",
+			"src": "work/sketchbook/16.jpg",
 			"title": "Night sky and a toucan, studies for ceramics, Paris, November 2015",
 			"classes": [
 				"grid-col-4",
@@ -154,7 +154,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/17.jpg",
+			"src": "work/sketchbook/17.jpg",
 			"title": "Birds and trees, studies for ceramics, Paris, November 2015",
 			"classes": [
 				"grid-col-4",
@@ -162,7 +162,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/12.jpg",
+			"src": "work/sketchbook/12.jpg",
 			"title": "Man in a cafe, London, 2015",
 			"classes": [
 				"grid-col-4",
@@ -170,7 +170,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/4.jpg",
+			"src": "work/sketchbook/4.jpg",
 			"title": "Charlotte, Paris, October 2015",
 			"classes": [
 				"grid-col-4",
@@ -178,7 +178,7 @@
 			]
 		},
 		{
-			"src": "projects/sketchbook/18.jpg",
+			"src": "work/sketchbook/18.jpg",
 			"title": "Studies for 'What is this, some kind of joke?' Lino print, Kingston, 2013",
 			"classes": [
 				"grid-col-4",

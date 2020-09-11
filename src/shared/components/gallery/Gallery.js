@@ -12,10 +12,10 @@ const StyledGallery = styled.div`
     height: ${props => props.height ? `${props.height}px` : "100%"};
     max-width: ${props => props.height ? `${props.height * 1.5}px` : "90vw"};
     margin: auto;
-    padding: 10px 0 20px;
+    padding: .5rem 0 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: .7rem;
 `;
 
 const StyledHeightCalculator = styled.div`
