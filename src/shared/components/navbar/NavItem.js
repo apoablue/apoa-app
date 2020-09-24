@@ -1,11 +1,7 @@
-import React from 'react';
-import propTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
-
-const StyledItem = styled.li`
-  float: left;
-`;
+import React from "react";
+import propTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledLink = styled(Link)`
   display: inline-block;
@@ -22,24 +18,20 @@ const StyledLink = styled(Link)`
   `}
 `;
 
-const NavItem = ({children, className, isSelected, setHover = () => {}, url}) => {
+const NavItem = ({ children, isSelected, setHover = () => {}, url }) => {
   return (
-    <StyledItem 
-      className={className} 
-      isSelected={isSelected} 
-      onClick={() => {}} 
+    <StyledLink 
+      isselected={`${isSelected}`} 
       onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}>
-      <StyledLink isselected={`${isSelected}`} to={url}>
-        {children}
-      </StyledLink>
-    </StyledItem>
+      onMouseLeave={() => setHover(false)} 
+      to={url}>
+      {children}
+    </StyledLink>
   );
 };
 
 NavItem.propTypes = {
   children: propTypes.node.isRequired,
-  className: propTypes.string,
   isSelected: propTypes.bool,
   setHover: propTypes.func,
   url: propTypes.string.isRequired,

@@ -1,3 +1,4 @@
-import Image from './Image';
+import Image from "./Image";
+import ImageWithTextOverlay from "./ImageWithTextOverlay";
 
-export { Image };
+export { Image, ImageWithTextOverlay };
