@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import propTypes from 'prop-types';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import propTypes from "prop-types";
+import styled from "styled-components";
 
-import { Image } from 'shared/components/image';
+import { Image } from "shared/components/image";
 
-const StyledGalleryItem = styled.div`
+const StyledContainer = styled.div`
     position: relative;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    cursor: pointer;
 `;
 
-const GalleryItemOverlay = styled.div`
+const StyledOverlay = styled.div`
     position: absolute;
     top: 0;
     right: 0;
@@ -24,14 +25,15 @@ const GalleryItemOverlay = styled.div`
     opacity: .85;
 `;
 
-const GalleryItemOverlayText = styled.div`
+const StyledText = styled.div`
     font-size: 1em;
     font-weight: bold;
     text-align: center;
     color: white;
+    user-select: none;
 `;
 
-const GalleryItem = ({imageUrl, overlayColour, updateOverlayColour, text}) => {
+const ImageWithTextOverlay = ({ imageUrl, onClick, overlayColour, updateOverlayColour = () => {}, text }) => {
     const [showOverlay, setShowOverlay] = useState(false);
 
     const onMouseLeave = () => {
@@ -40,24 +42,28 @@ const GalleryItem = ({imageUrl, overlayColour, updateOverlayColour, text}) => {
     }
 
     return (
-        <StyledGalleryItem 
+        <StyledContainer 
+            onClick={onClick}
             onMouseEnter={() => setShowOverlay(true)} 
             onMouseLeave={onMouseLeave}>
             <Image url={imageUrl} />
             {showOverlay && (
-                <GalleryItemOverlay overlayColour={overlayColour}>
-                    <GalleryItemOverlayText>
+                <StyledOverlay overlayColour={overlayColour}>
+                    <StyledText>
                         {text}
-                    </GalleryItemOverlayText>
-                </GalleryItemOverlay>
+                    </StyledText>
+                </StyledOverlay>
             )}
-        </StyledGalleryItem>
+        </StyledContainer>
     );
 }
 
-GalleryItem.propTypes = {
+ImageWithTextOverlay.propTypes = {
     imageUrl: propTypes.string.isRequired,
+    onClick: propTypes.func,
+    overlayColour: propTypes.string,
+    updateOverlayColour: propTypes.func,
     text: propTypes.string.isRequired,
 };
 
-export default GalleryItem;
+export default ImageWithTextOverlay;

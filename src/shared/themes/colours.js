@@ -18,7 +18,7 @@ export const colours = {
     red700: "#f55e5c",
     red800: "#f77e7c",
     red900: "#f67270",
-    red1000: "#f78685",
+    red1000: "#ffcecc",
     red11000: "#f99a99",
     red12000: "#faaead",
     orange100: "#983701",

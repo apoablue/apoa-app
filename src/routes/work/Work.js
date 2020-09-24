@@ -1,37 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-import { Gallery, GalleryItem } from 'shared/components/gallery';
-import Layout from 'shared/components/Layout';
-import { PAGE_NAME } from 'shared/constants/PageName';
+import { Gallery } from "shared/components/gallery";
+import { ImageWithTextOverlay } from "shared/components/image";
+import Layout from "shared/components/Layout";
+import { PAGE_NAME } from "shared/constants/PageName";
+import { PROJECT_IDS, PROJECT_NAMES, PROJECT_PATHS } from "shared/constants/Projects";
+import { randomColour } from "shared/utils/randomColour";
 
-import { PROJECT_IDS, PROJECT_NAMES } from './constants/Projects';
-
-const randomColour = (previousColour) => {
-    const colours = ["action200", "info200", "success200", "highlight200", "primary200", "warning200"];
-    const i = Math.floor(Math.random() * colours.length);
-    if (colours[i] !== previousColour) {
-        return colours[i];
-    } else {
-        return randomColour(previousColour);
-    }
-}
+import Project from "./Project";
 
 const Work = () => {
+    const location = useLocation();
+    const path = location?.pathname?.substring(1);
+    const id = Object.values(PROJECT_IDS).find(id => PROJECT_PATHS[id] === path);
+    const [selectedProject, setSelectedProject] = useState(id);
     const [overlayColour, setOverlayColour] = useState(randomColour());
 
     return (
         <Layout pageName={PAGE_NAME.WORK}>
-            <Gallery fillMaxHeight>
-                {Object.values(PROJECT_IDS).map((projectId) => {
-                    return (
-                        <GalleryItem 
-                            imageUrl={require(`assets/images/work/thumbnails/${projectId}.jpg`)}
-                            overlayColour={overlayColour}
-                            updateOverlayColour={() => setOverlayColour(randomColour(overlayColour))}
-                            text={PROJECT_NAMES[projectId]} key={projectId} />
-                    );
-                })}
-                </Gallery>
+                {!selectedProject && (
+                    <Gallery>
+                        {Object.values(PROJECT_IDS).map((projectId) => {
+                            return (
+                                <Link to={`/${PROJECT_PATHS[projectId]}`} key={projectId}>
+                                    <ImageWithTextOverlay 
+                                        imageUrl={require(`assets/images/work/thumbnails/${projectId}.jpg`)}
+                                        onClick={() => setSelectedProject(projectId)}
+                                        overlayColour={overlayColour}
+                                        updateOverlayColour={() => setOverlayColour(randomColour(overlayColour))}
+                                        text={PROJECT_NAMES[projectId]} />
+                                </Link>                            
+                            );
+                        })}
+                    </Gallery>
+                )}
+                {selectedProject && <Project projectId={selectedProject} />}              
         </Layout>
     );
 }

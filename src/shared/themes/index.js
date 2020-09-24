@@ -1,3 +1,3 @@
-import { MainTheme } from './main-theme';
+import { MainTheme } from "./main-theme";
 
 export { MainTheme };

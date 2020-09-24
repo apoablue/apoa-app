@@ -1,11 +1,11 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
-import ApoaImage from 'assets/images/about/1.jpg';
-import { Image } from 'shared/components/image';
-import Layout from 'shared/components/Layout';
-import { PAGE_NAME } from 'shared/constants/PageName';
+import ApoaImage from "assets/images/about/1.jpg";
+import { Image } from "shared/components/image";
+import Layout from "shared/components/Layout";
+import { PAGE_NAME } from "shared/constants/PageName";
 
 const animateBorderColour = (props) => {
     const colours = props.theme.colours;
@@ -29,9 +29,8 @@ const StyledContainer = styled.div`
 `;
 
 const StyledImageContainer = styled.div`
-    height: 50vh;
-    width: 50vh;
-    margin: auto;
+    max-width: 50vh;
+    margin: 0 auto;
     border: .8em solid ${props => props.theme.colours.info500};
     border-radius: 50%;
     overflow: hidden;
@@ -44,6 +43,7 @@ const StyledImage = styled(Image)`
 
 const StyledBio = styled.div`
     margin: 1.5em 1em 2em;
+    text-align: center;
 `;
 
 const StyledLink = styled(Link)`
