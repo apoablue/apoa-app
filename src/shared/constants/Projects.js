@@ -118,10 +118,12 @@ export const PROJECT_IMAGES = {
 		},
 		{
 			id: 12,
-			title: "Man in a cafe, London, 2015",
+      title: "Man in a cafe, London, 2015",
+    },
 		{
 			id: 4,
-			title: "Charlotte, Paris, October 2015",
+      title: "Charlotte, Paris, October 2015",
+    },
 		{
 			id: 18,
 			title: "Studies for 'What is this, some kind of joke?' Lino print, Kingston, 2013",
