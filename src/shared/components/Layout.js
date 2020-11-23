@@ -28,6 +28,7 @@ const Content = styled.div`
     width: 100%;
     margin: auto;
     padding: 1.5rem;
+    padding-bottom: 3rem;
 `;
 
 const Layout = ({ children, pageName }) => {

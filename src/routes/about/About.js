@@ -10,13 +10,34 @@ import { PAGE_NAME } from "shared/constants/PageName";
 const animateBorderColour = (props) => {
     const colours = props.theme.colours;
     return keyframes`
-        0% { border-color: ${colours.primary500}; }
-        17% { border-color: ${colours.highlight500}; }
-        33% { border-color: ${colours.action500}; }
-        50% { border-color: ${colours.info500}; }
-        67% { border-color: ${colours.success500}; }
-        83% { border-color: ${colours.warning500}; }
-        100% { border-color: ${colours.primary500}; }
+        0% { 
+            background-color: ${colours.primary500}; 
+            border-color: ${colours.primary500}; 
+        }
+        17% { 
+            background-color: ${colours.highlight500}; 
+            border-color: ${colours.highlight500}; 
+        }
+        33% { 
+            background-color: ${colours.action500}; 
+            border-color: ${colours.action500}; 
+        }
+        50% { 
+            background-color: ${colours.info500}; 
+            border-color: ${colours.info500}; 
+        }
+        67% { 
+            background-color: ${colours.success500}; 
+            border-color: ${colours.success500}; 
+        }
+        83% { 
+            background-color: ${colours.warning500}; 
+            border-color: ${colours.warning500}; 
+        }
+        100% { 
+            background-color: ${colours.primary500}; 
+            border-color: ${colours.primary500}; 
+        }
     `
 };
 
@@ -28,17 +49,16 @@ const StyledContainer = styled.div`
     height: 100%;
 `;
 
-const StyledImageContainer = styled.div`
-    max-width: 50vh;
+const StyledImage = styled(Image)`
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     border: .8em solid ${props => props.theme.colours.info500};
     border-radius: 50%;
+    background-color: ${props => props.theme.colours.info500};
+    object-position: right bottom;
     overflow: hidden;
     animation: ${props => animateBorderColour} 10s infinite;
-`;
-
-const StyledImage = styled(Image)`
-    object-position: right bottom;
 `;
 
 const StyledBio = styled.div`
@@ -59,9 +79,7 @@ const About = () => {
     return (
         <Layout pageName={PAGE_NAME.ABOUT}>
             <StyledContainer>
-                <StyledImageContainer>
-                    <StyledImage url={ApoaImage} />
-                </StyledImageContainer>
+                <StyledImage url={ApoaImage} />
                 <StyledBio>
                     Software Engineer and Illustrator based in London. 
                     See some of my work <StyledLink to="/">here</StyledLink>. 

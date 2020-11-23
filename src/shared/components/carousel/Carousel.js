@@ -4,11 +4,33 @@ import styled from "styled-components";
 import { ArrowLeftCircleFill } from "@styled-icons/bootstrap";
 import { ArrowRightCircleFill } from "@styled-icons/bootstrap";
 
+const ARROW_SIZE = 30;
+
 const StyledContainer = styled.div`
     display: flex;
+    position: relative;
     max-width: 800px;
     margin: auto;
     margin-top: 3em;
+`;
+
+const ArrowContainer = styled.div`
+    position: absolute;
+    top: calc(50% - 20px);
+    height: ${ARROW_SIZE}px;
+    width: ${ARROW_SIZE}px;
+    border-radius: 50%;
+    background: white;
+    filter: drop-shadow(1px 1px 7px white);
+    overflow: hidden;
+`;
+
+const StyledLeftArrowContainer = styled(ArrowContainer)`
+    left: 1em;
+`;
+
+const StyledRightArrowContainer = styled(ArrowContainer)`
+    right: 1em;
 `;
 
 const StyledArrow = (icon) => {
@@ -19,6 +41,7 @@ const StyledArrow = (icon) => {
         &:hover {
             color: ${props => props.theme.colours.action700};
         }
+        @media ()
     `;
 };
 
@@ -26,8 +49,7 @@ const StyledLeftArrow = StyledArrow(ArrowLeftCircleFill);
 const StyledRightArrow = StyledArrow(ArrowRightCircleFill);
 
 const StyledCarousel = styled.div`
-    margin: 0 1em;
-    padding-bottom: .3em;
+    padding: 0 calc(${ARROW_SIZE}px + 2em) .3em;
     overflow-x: auto;
     &::-webkit-scrollbar {
         height: .5em;
@@ -69,21 +91,29 @@ const Carousel = ({ children }) => {
 
     return (
         <StyledContainer>
-            <StyledLeftArrow 
-                onClick={() => scrollCarousel(-250)} 
-                scrollPosition={scrollPosition} 
-                size="170" 
-                title="Left Arrow" />
             <StyledCarousel ref={carouselRef}>
                 <StyledGrid>
                     {children}
                 </StyledGrid>
             </StyledCarousel>
-            <StyledRightArrow 
-                onClick={() => scrollCarousel(250)}
-                scrollPosition={scrollPosition} 
-                size="170" 
-                title="Right Arrow" />
+            {true && (
+                <>
+                    <StyledLeftArrowContainer>
+                        <StyledLeftArrow 
+                            onClick={() => scrollCarousel(-250)} 
+                            scrollPosition={scrollPosition} 
+                            size={ARROW_SIZE}
+                            title="Left Arrow" />
+                    </StyledLeftArrowContainer> 
+                    <StyledRightArrowContainer>
+                        <StyledRightArrow 
+                            onClick={() => scrollCarousel(250)}
+                            scrollPosition={scrollPosition} 
+                            size={ARROW_SIZE}
+                            title="Right Arrow" /> 
+                    </StyledRightArrowContainer>
+                </>
+            )}
         </StyledContainer>
     );
 }

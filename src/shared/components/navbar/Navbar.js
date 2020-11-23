@@ -11,7 +11,7 @@ const StyledNavbar = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0;
+  margin-bottom: 0.75em;
   padding: 0 .75em;
   overflow: hidden;
   background-color: #FFF;
